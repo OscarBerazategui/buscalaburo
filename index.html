@@ -2,15 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca Laburo</title>
+    <link rel="shortcut icon" href="./images/buscalaburo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <h1>
-        Busca Laburo
-    </h1>
-    <p>
-        En esta plataforma encontraras trabajo
-    </p>
+    <header>
+        <div class="container">
+            <a href="#" id="logo-btn"><img id="logo" src="./images/logo-buscalaburo.png" alt="Busca Laburo Logo"></a>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#register">Registrarse</a></li>
+                    <li><a href="#login">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="container"> 
+        <div class="buttons">
+            <a href="#busco-trabajo" class="btn">Busco Trabajo</a>
+            <a href="#ofrezco-empleo" class="btn">Ofrezco Empleo</a>
+        </div>
+    </section>   
+    <section id="about">
+        <div class="container">
+            <h2>Acerca de Busca Laburo</h2>
+            <p>Busca Laburo es una plataforma revolucionaria que conecta a personas con oportunidades laborales adaptadas a sus habilidades y necesidades. Utilizando tecnologías disruptivas como inteligencia artificial, machine learning y big data, facilitamos la conexión entre empleadores y buscadores de empleo, brindando una experiencia de búsqueda de trabajo rápida, efectiva y transparente.</p>
+            <p>Estamos comprometidos a transformar la búsqueda y colocación de empleo en Argentina, brindando oportunidades a aquellos que buscan estabilidad laboral y a las empresas que desean encontrar el talento adecuado de manera ágil y precisa.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <img src="./images/mujer1.png" alt="User 1">
+                <p>"Gracias a Busca Laburo encontré el trabajo de mis sueños en menos de una semana. ¡No puedo agradecerles lo suficiente!"</p>
+                <cite>- María S., Buenos Aires</cite>
+            </div>
+            <div class="testimonial">
+                <img src="./images/hombre1.png" alt="User 2">
+                <p>"Increíble plataforma. Fácil de usar, y lo mejor de todo, ¡encontré un trabajo que realmente disfruto!"</p>
+                <cite>- Juan M., Córdoba</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Busca Laburo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
